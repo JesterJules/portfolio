@@ -1,0 +1,330 @@
+<p>Hello World</p>
+<!-- This is a paragraph -->
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<!-- These are akk heading as the number decreases, so does the size and relevancy -->
+
+<h1>This is the main header</h1>
+
+<p>This is a paragraph</p>
+
+<h3>This a subheading</h3>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quam accusamus repudiandae deserunt? Excepturi perferendis et voluptas. Eveniet eius numquam unde esse quam. Facere voluptatum id deserunt doloribus dolores laudantium autem ipsa, obcaecati soluta blanditiis eligendi voluptatibus numquam, quod error modi quaerat consectetur velit accusamus provident fuga, odio repellendus labore.<br><br>Deserunt in ipsum voluptates quaerat, repudiandae amet, aut, saepe aspernatur iusto quisquam velit sapiente optio dignissimos voluptate ea illo provident. Voluptatum, architecto repellendus perspiciatis asperiores quas, iste laborum nihil natus eligendi rem facilis quibusdam qui! Fugiat ab vel, aliquid doloremque non laudantium neque minima. Recusandae quaerat voluptas pariatur eius repudiandae?</p>
+<!-- <p>lorem100</> makes placeholder text of 100 words -->
+<!-- <br> adds a line break and move the following text onto the next line. To have a clear line break add <br><br> -->
+
+<p>
+<a href="https://wearecodenation.com/">Code Nation</a> is a school for coding
+</p>
+<!-- THis is how to add a link. The text between > and < is how the link appears in the browser -->
+
+<a href="http://www.google.com" target="_blank">This is a link to Google</a>
+<!-- This allows the link to open in a new tab -->
+
+<img src="image1.png" alt="game">
+<!-- This is how to add an image -->
+
+<a href="http://www.google.com" target="_blank"><img src="image1.png" alt="game"></a>
+<!-- this is how to turn an image into a link -->
+
+<q>Inline quote</q>
+<blockquote>Blockquote</blockquote>
+<!-- This is how to add a quote -->
+
+<q>Socialism is based</q>
+<blockquote>-Karl Marx</blockquote>
+<br><br>
+<h2>List of drinks I like</h2>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Hot Chocolate</li>
+</ul>
+<!-- This is how to add an unordered (bullet point) list -->
+
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Hot Chocolate</li>
+</ol>
+<!-- this is how to add an ordered list -->
+
+<dl>
+    <dt>Coffee</dt>
+    <dd>Black hot Drink</dd>
+    <dt>Tea</dt>
+    <dt>Hot Chocolate</dt>
+</dl>
+
+<section class="carousel" aria-label="Gallery">
+    <ol class="caorusel_viewport">
+        <li id="carousel_slide1"
+            tabindex="0"
+            class="carousel_slide">
+        <div class="carousel_snapper">
+            <a href="#carousel_slide4"
+                class=""carousel_prev>Last</a>
+            <a href="#carousel_slide2"
+                class="carousel_next">Next</a>
+        </div>
+        </li>
+        <li id="carousel_slide2"
+            tabindex="0"
+            class="carousel_slide">
+        <div class="carousel_snapper"></div>
+            <a href="#carousel_slide1"
+                class="carousel_prev">Previous</a>
+            <a href="#carousel_slide3"
+                class="carousel_next">Next</a>
+        </li>
+        <li id="carousel_slide3"
+            tabindex="0"
+            class="carousel_slide">
+        <div class="carousel_snapper"></div>
+            <a href="#carousel_slide2"
+        class="carousel_prev">Next</a>
+            <a href="#carousel_slide4"
+            class="carousel_prev">Previous</a>
+            <a href="#carousel_slide1"
+            class="carousel_next">Next</a>
+        </li>
+        <li id="carousel_slide4"
+            tabindex="0"
+            class="carousel_slide">
+        <div class="carousel_snapper"></div>
+            <a href="#carousel_slide3"
+            class="carousel_prev">Previous</a>
+            <a href="#carousel_slide1"
+            class="carousel_next">Previous</a>
+        </li>
+    </ol>
+    <aside class="carousel_navigation">
+        <ol class="carousel_navigation-list">
+            <li class="carousel_navigation-list">
+                <a href="#carousel_slide1"
+                class="carousel_navigation-button">Slide 1</a>
+            </li>
+            <li class="carousel_navigation-item">
+                <a href="#carousel_slide2"
+                class="carousel_navigation-button">Slide 2</a>
+            </li>
+            <li class="carousel_navigation-item">
+                <a href="#carousel_slide3"
+                class="carousel_navigation-button">Slide 3</a>
+            </li>
+            <li class="carousel_navigation-item">
+                <a href="#carousel_slide4"
+                class="carousel_navigation-button">Slide 4</a>
+            </li>
+        </ol>
+    </aside>
+</section>
+
+@keyframes tonext {
+    75% {
+        left:0;
+    }
+    95% {
+        left: 100%;
+    }
+    99% {
+        left: 100%;
+    }
+    99% {
+        left: 0;
+    }
+}
+@keyframes tostart {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: -300%;
+    }
+    98%{
+        left: -300%;
+    }
+    99% {
+        left: 0;
+    }
+}
+@keyframes snap {
+    96% {
+        scroll-snap-align: center;
+    }
+    97% {
+        scroll-snap-align: none;
+    }
+    99% {
+        scroll-snap-align: none;
+    }
+    100% {
+        scroll-snap-align: center;
+    }
+}
+body {
+    max-width: 37.5rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    font-family: 'Lato', sans-serif;
+    }
+
+* {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+*::-webkit-scrollbar {
+    width: 0;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+* {
+    -ms-overflow-style: none;
+}
+ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    position: relative;
+    padding-top: 75%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+}
+.carousel_viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.carousel_slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #f99;
+    counter-increment: item;
+}
+.carousel_slide:nth-child(even) {
+    background-color: #99f;
+}
+.carousel_slide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+}
+.carousel_snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+}
+@media (hover: hover) {
+    .carousel_snapper {
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    .carousel_slide:last-child .carousel_snapper {
+        animation-name: tostart, snap;
+    }
+}    
+@media (prefers-reduced-motion: reduce) {
+    .carousel_snapper {
+        animation-name: none;
+    }
+}
+.carousel:hover .carousel_snapper,
+.carousel:focus-within .carousel_snapper {
+    animation-name: none;
+}
+.carousel_navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.carousel_navigation-list,
+.carousel_navigation-item {
+    display: inline-block;
+}
+.carousel_navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+.carousel::before,
+.carousel::after,
+.carousel_prev,
+.carousel_next {
+    position: absolute;
+    top: 0;
+    margin-top: 37.5%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+}
+.carousel::before,
+.carousel_prev {
+    left: -1rem;
+}
+.carousel::after,
+.carousel_next {
+    right: -1rem;
+}
+.carousel::before,
+.carousel::after {
+    content: '';
+    z-index: 1;
+    background-color: #333;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+.carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+.carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
